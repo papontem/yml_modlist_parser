@@ -24,7 +24,7 @@ class Yml_modlist_parser:
         for key, value in self.extracted_mods.items():
             print(key + " : " + str(value))
 
-    def print_data_by_iteration(self):
+    def print_data(self):
         """
             This funcion will try to print all of the mods that may be inside the extracted safe data in a tabular format
             LIKE SO: 
@@ -79,7 +79,7 @@ class Yml_modlist_parser:
 
     #### formating helper
     def center_justify(self, text, width):
-        padding = (width - len(text)) // 2
+        # padding = (width - len(text)) // 2
         return text.center(width, ' ')
     
     
